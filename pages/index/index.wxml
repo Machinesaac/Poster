@@ -10,9 +10,5 @@
 
   <button class="publish" bindtap="toPublish">发布</button>
   <button class="taskbar" bindtap="toTaskbar">任务栏</button>
-  
-  <button bindtap="clickMe">这</button>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
 </view>

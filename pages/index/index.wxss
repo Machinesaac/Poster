@@ -20,8 +20,13 @@
   margin-top: 200px;
 }
 .publish {
-  background-color: rgb(237, 100, 207);
+  background-color: rgb(79, 166, 206);
+  width:50%;
+  float:right;
 }
+
 .taskbar {
+  float: left;
+  width:50%;
   background-color: cornflowerblue;
 }

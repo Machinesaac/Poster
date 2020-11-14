@@ -25,9 +25,6 @@ Page({
       url: '../taskbar/taskbar',
     })
   },
-  clickMe: function() {
-    this.setData({motto:"最爱你了"})
-  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
