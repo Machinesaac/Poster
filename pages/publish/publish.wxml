@@ -1,7 +1,7 @@
 <view class = "page-body">
   <view class="page-section">
-    <view class="cell-title">活动类型</view>
-    <input class="inf-input" bindinput="getType" placeholder="请输入活动类型"/>
+    <view class="cell-title">实验类型</view>
+    <input class="inf-input" bindinput="getType" placeholder="请输入实验类型"/>
   </view>
   <view class="page-section">
     <view class="cell-title">招募人</view>
@@ -12,20 +12,20 @@
     <input class="inf-input" bindinput="getAsk" placeholder="请输入要求"/>
   </view>
   <view class="page-section">
-    <view class="cell-title">活动时长</view>
-    <input class="inf-input" bindinput="getDuration"placeholder="请输入活动时长"/>
+    <view class="cell-title">实验时长</view>
+    <input class="inf-input" bindinput="getDuration"placeholder="请输入实验时长"/>
   </view>
   <view class="page-section">
-    <view class="cell-title">活动报酬</view>
-    <input class="inf-input" bindinput="getPayment" placeholder="请输入活动报酬"/>
+    <view class="cell-title">实验报酬</view>
+    <input class="inf-input" bindinput="getPayment" placeholder="请输入实验报酬"/>
   </view>
   <view class="page-section">
-    <view class="cell-title">活动地点</view>
-    <input class="inf-input" bindinput="getLoc" placeholder="请输入活动地点"/>
+    <view class="cell-title">实验地点</view>
+    <input class="inf-input" bindinput="getLoc" placeholder="请输入实验地点"/>
   </view>
   <view class="page-section">
-    <view class="cell-title">活动时间</view>
-    <input class="inf-input" bindinput="getTime" placeholder="请输入活动时间"/>
+    <view class="cell-title">实验时间</view>
+    <input class="inf-input" bindinput="getTime" placeholder="请输入实验时间"/>
   </view>
   <view class="page-section">
     <view class="cell-title">备注事项</view>
