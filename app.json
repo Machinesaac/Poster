@@ -3,14 +3,30 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/publish/publish",
-    "pages/taskbar/taskbar"
+    "pages/text/text"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#154569",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#c00812",
+    "navigationBarTitleText": "Lab",
     "navigationBarTextStyle":"white",
-    "backgroundColor": "#ffdaab"
+    "backgroundColor": "#ffdaab" 
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "Main",
+      "iconPath": "images/mainSelect.png",
+      "selectedIconPath": "images/mainSelected.png"
+      },
+      {
+        "pagePath": "pages/text/text",
+        "text": "Me",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me.png"
+      }
+  ]
+  }
 }

@@ -7,8 +7,13 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-
-  <button class="publish" bindtap="toPublish">发布</button>
-  <button class="taskbar" bindtap="toTaskbar">任务栏</button>
+  <button class = "publish" bindtap="toPublish">
+    <image class="btnImg" src= '../../images/out.png'></image>
+    <view>发布</view>
+  </button>
+  <button class="notice" bindtap="toTaskbar">
+    <image class = "noticeImg" src= '../../images/in.png'></image>
+    <view>悬赏栏</view>
+  </button>
 
 </view>

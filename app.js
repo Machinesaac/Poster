@@ -6,6 +6,13 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
+    // 云服务
+    wx.cloud.init({
+      //环境ID
+      env: 'poster-7gmqnwnb215c1afc',
+      traceUser: true,
+    })
+
     // 登录
     wx.login({
       success: res => {

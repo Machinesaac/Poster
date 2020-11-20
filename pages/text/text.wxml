@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="bg-fff p-lr30 border-t">
+    <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font14">招募人</label>
+      <input type="text" class="ml40 flex1" placeholder="请输入招募人姓名" bindinput="getNameValue"></input>
+    </view>
+ 
+    <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font14">实验报酬</label>
+      <input type="text" class="ml40 flex1" maxlength="11" placeholder="请输入实验报酬" bindinput="getPhoneValue"></input>
+    </view>
+
+    <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font14">实验时间</label>
+      <input type="text" class="ml40 flex1" maxlength="11" placeholder="请输入实验时间" bindinput="getPhoneValue"></input>
+    </view>
+ 
+    <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font14">实验所在地点</label>
+      <input type="text" class="ml40 flex1" maxlength="11" placeholder="请输入实验所在地区" bindinput="getPhoneValue"></input>
+    </view>
+    
+    <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font14">被试者要求</label>
+      <input type="text" class="ml40 flex1" maxlength="30" placeholder="请输入被试者所需条件" bindinput="getPhoneValue"></input>
+    </view>
+ 
+    <view class="ipt-wrap border-b">
+      <textarea name="" id="" class="textarea _w100 p-tb30 lh10" maxlength="50" placeholder="可在此处填写备注说明" bindinput="getRemarksValue" ></textarea>
+    </view>
+  </view>
+ 
+ 
+  <view class="combtn font16 color-fff _w100 bg-btn" data-url="../addNewAddress/addNewAddress" bindtap="saveNewAddress">
+    确定
+  </view>
+</view>
