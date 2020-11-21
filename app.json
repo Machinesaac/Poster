@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/publish/publish",
-    "pages/text/text"
+    "pages/text/text",
+    "pages/me/me"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -22,7 +23,7 @@
       "selectedIconPath": "images/mainSelected.png"
       },
       {
-        "pagePath": "pages/text/text",
+        "pagePath": "pages/me/me",
         "text": "Me",
         "iconPath": "images/me.png",
         "selectedIconPath": "images/me.png"

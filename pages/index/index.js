@@ -17,7 +17,7 @@ Page({
   },
   toPublish: function() {
     wx.navigateTo({
-      url: '../publish/publish',
+      url: '../text/text',
     })
   },
   toTaskbar: function() {
