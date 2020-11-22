@@ -6,7 +6,6 @@
     </view>
     
     <view class="ipt-wrap border-b flex ai-center">
-<<<<<<< HEAD
     <view class="section">
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker">
@@ -16,12 +15,10 @@
    </view>
   </view>
     
-=======
+    <view class="ipt-wrap border-b flex ai-center">
       <label for="" class="font14">实验类型</label>
-      <input type="text" class="ml40 flex1" placeholder="请输入实验类型" bindinput="getType"></input>
+      <input type="text" class="ml40 flex1" maxlength="11" placeholder="请输入实验类型" bindinput="getType"></input>
     </view>
->>>>>>> e4800f3748a74c3fd5f92c572dc0bee5556cec1c
-
     <view class="ipt-wrap border-b flex ai-center">
       <label for="" class="font14">实验报酬</label>
       <input type="text" class="ml40 flex1" maxlength="11" placeholder="请输入实验报酬" bindinput="getPayment"></input>
@@ -45,10 +42,10 @@
     <view class="ipt-wrap border-b">
       <textarea name="" id="" class="textarea _w100 p-tb30 lh10" maxlength="50" placeholder="可在此处填写备注说明" bindinput="getPs" ></textarea>
     </view>
-  </view>
  
  
   <view class="combtn font16 color-fff _w100 bg-btn" bindtap="publish">
     确定
   </view>
+</view>
 </view>
