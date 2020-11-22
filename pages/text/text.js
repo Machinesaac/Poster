@@ -1,67 +1,79 @@
-// pages/text/text.js
-Page({
+const db = wx.cloud.database({
+  env:"poster-7gmqnwnb215c1afc"
+})
 
-  /**
-   * 页面的初始数据
-   */
+Page({
   data: {
+<<<<<<< HEAD
     array: ['请选择','问卷调查', '行为实验', '脑电实验', '眼动实验'],
     index: 0
+=======
+    type: ' ',
+    name: ' ',
+    ask: ' ',
+    duration: ' ',
+    payment: ' ',
+    loc: ' ',
+    time: ' ',
+    ps: ' ',
+>>>>>>> e4800f3748a74c3fd5f92c572dc0bee5556cec1c
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  getType: function(e){
+    this.setData({
+      type: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  getName: function(e){
+    this.setData({
+      name: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  getAsk: function(e){
+    this.setData({
+      ask: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  getDuration: function(e){
+    this.setData({
+      duration: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  getPayment: function(e){
+    this.setData({
+      payment: e.detail.value
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  getLoc: function(e){
+    this.setData({
+      loc: e.detail.value
+    })
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  getTime: function(e){
+    this.setData({
+      time: e.detail.value
+    })
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  getPs: function(e){
+    this.setData({
+      ps: e.detail.value
+    })
+  },
+  publish: function(){
+    db.collection('jobs').add({
+      data: {
+        type:this.data.type,
+        name:this.data.name,
+        ask:this.data.ask,
+        duration:this.data.duration,
+        payment:this.data.payment,
+        loc:this.data.loc,
+        time:this.data.time,
+        ps:this.data.ps,
+      },
+      success: function(res) {
+        console.log(res)
+      }
+    })
+  
   }
 })
