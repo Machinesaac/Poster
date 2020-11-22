@@ -4,7 +4,18 @@
       <label for="" class="font14">招募人</label>
       <input type="text" class="ml40 flex1" placeholder="请输入招募人姓名" bindinput="getNameValue"></input>
     </view>
- 
+    
+    <view class="ipt-wrap border-b flex ai-center">
+    <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      <label for="" class="font14">实验类别：</label>{{array[index]}}
+    </view>
+    </picker>
+   </view>
+  </view>
+    
+
     <view class="ipt-wrap border-b flex ai-center">
       <label for="" class="font14">实验报酬</label>
       <input type="text" class="ml40 flex1" maxlength="11" placeholder="请输入实验报酬" bindinput="getPhoneValue"></input>

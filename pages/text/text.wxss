@@ -37,3 +37,63 @@
   position: absolute;
   left: 150rpx;
 }
+/*下拉选择栏*/
+.fenlei{
+  margin: 0 25rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  display: flex;
+  align-items: center;
+}
+.fenlei text{
+  font-size: 30rpx;
+  color: #999999;
+  margin-left: 15rpx;
+}
+
+/* 下拉框 */
+.select_box {
+  background: #fff;
+  width: 620rpx;
+  /* margin: 0 auto; */
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: left;
+  position: relative;
+}
+ 
+
+.select_img {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.select_img_rotate {
+  transform: rotate(180deg);
+}
+
+.option_box {
+  position: absolute;
+  top: 86rpx;
+  width: 100%;
+  /* border: 1px solid #efefef; */
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+  z-index: 100;
+}
+
+.option {
+  display: block;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+  color: rgb(102, 102, 102);
+}
