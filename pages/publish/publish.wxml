@@ -3,33 +3,16 @@
     <view class="cell-title">实验类型</view>
     <input class="inf-input" bindinput="getType" placeholder="请输入实验类型"/>
   </view>
+
+  <view class="view_fengexian">
+	    <view ></view>
+	    <image class="image_fengexian" src= '../../images/fengexian.png'></image>
+	    <view ></view>
+  </view>
+
+
   <view class="page-section">
     <view class="cell-title">招募人</view>
     <input class="inf-input" bindinput="getName" placeholder="请输入招募人姓名"/>
   </view>
-  <view class="page-section">
-    <view class="cell-title">对应聘人的要求</view>
-    <input class="inf-input" bindinput="getAsk" placeholder="请输入要求"/>
-  </view>
-  <view class="page-section">
-    <view class="cell-title">实验时长</view>
-    <input class="inf-input" bindinput="getDuration"placeholder="请输入实验时长"/>
-  </view>
-  <view class="page-section">
-    <view class="cell-title">实验报酬</view>
-    <input class="inf-input" bindinput="getPayment" placeholder="请输入实验报酬"/>
-  </view>
-  <view class="page-section">
-    <view class="cell-title">实验地点</view>
-    <input class="inf-input" bindinput="getLoc" placeholder="请输入实验地点"/>
-  </view>
-  <view class="page-section">
-    <view class="cell-title">实验时间</view>
-    <input class="inf-input" bindinput="getTime" placeholder="请输入实验时间"/>
-  </view>
-  <view class="page-section">
-    <view class="cell-title">备注事项</view>
-    <input class="inf-input" bindinput="getPs" placeholder="请输入备注事项"/>
-  </view>
-  <button bindtap="publish">发布</button>
 </view>

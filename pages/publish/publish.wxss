@@ -1,0 +1,30 @@
+.page-section{
+  min-height: 100rpx;
+  line-height: 100rpx;
+  background-color: white;
+  height: 250rpx;
+  width: 250rpx;
+}
+
+.view_fengexian {
+  width: 96%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0rpx 2% 0rpx 2%;
+}
+
+/* 两个view的样式 */
+.view_fengexian view {
+  width: 33%;
+  height: 2rpx;
+  background: linear-gradient(to right, #ead6ee, #a0f1ea);
+}
+
+/* 字体的样式 */
+.image_fengexian {
+  width: 50rpx;
+  height: 50rpx;
+}

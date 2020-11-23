@@ -6,7 +6,6 @@
     </view>
     
     <view class="ipt-wrap border-b flex ai-center">
-<<<<<<< HEAD
     <view class="section">
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker">
@@ -16,11 +15,6 @@
    </view>
   </view>
     
-=======
-      <label for="" class="font14">实验类型</label>
-      <input type="text" class="ml40 flex1" placeholder="请输入实验类型" bindinput="getType"></input>
-    </view>
->>>>>>> e4800f3748a74c3fd5f92c572dc0bee5556cec1c
 
     <view class="ipt-wrap border-b flex ai-center">
       <label for="" class="font14">实验报酬</label>
@@ -49,6 +43,7 @@
  
  
   <view class="combtn font16 color-fff _w100 bg-btn" bindtap="publish">
+    <image class="yesImg" src= '../../images/yes.png'></image>
     确定
   </view>
 </view>

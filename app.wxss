@@ -295,6 +295,10 @@ view,text{font-size: 13px;}
   color: #363636;
 }
 .combtn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 100rpx;
   text-align: center;
   line-height: 100rpx;
