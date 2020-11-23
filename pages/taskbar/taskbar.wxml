@@ -1,2 +1,5 @@
 <!--pages/taskbar/taskbar.wxml-->
-<text>pages/taskbar/taskbar.wxml</text>
+
+<view wx:for="{{s}}">
+  <text>{{item.type}}</text>
+</view>
