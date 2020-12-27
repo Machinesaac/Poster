@@ -45,6 +45,7 @@
  
  
   <view class="combtn font16 color-fff _w100 bg-btn" bindtap="publish">
+    <image class="yesImg" src= '../../images/yes.png'></image>
     确定
   </view>
 </view>

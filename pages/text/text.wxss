@@ -9,6 +9,11 @@
   position: relative;
   top: 1rpx;
 }
+.yesImg{
+  position: relative;
+  width: 50rpx;
+  height: 50rpx;
+}
 .textarea{
   height: 100rpx;
 }

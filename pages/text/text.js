@@ -4,16 +4,8 @@ const db = wx.cloud.database({
 
 Page({
   data: {
-    array: ['请选择','问卷调查', '行为实验', '脑电实验', '眼动实验'],
-    index: 0,
-    type: ' ',
-    name: ' ',
-    ask: ' ',
-    duration: ' ',
-    payment: ' ',
-    loc: ' ',
-    time: ' ',
-    ps: ' ',
+    array: ['问卷调查', '行为实验', '脑电实验', '眼动实验'],
+    index: 0
   },
   getType: function(e){
     this.setData({
