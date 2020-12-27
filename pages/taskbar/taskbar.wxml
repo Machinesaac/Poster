@@ -1,5 +1,5 @@
 <!--pages/taskbar/taskbar.wxml-->
 
-<view wx:for="{{s}}">
-  <text>{{item.type}}</text>
+<view wx:for="{{s}}" bindtap="toDetails" data-id="{{item._id}}">
+  {{item.type}}{{item.payment}}
 </view>

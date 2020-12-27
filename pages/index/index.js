@@ -22,7 +22,7 @@ Page({
   },
   toTaskbar: function() {
     wx.navigateTo({
-      url: '../publish/publish',
+      url: '../taskbar/taskbar',
     })
   }
 })
