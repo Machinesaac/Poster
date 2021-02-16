@@ -1,7 +1,9 @@
 <view>
   <view class="type">{{s.type}}</view>
   <view class="ask">{{s.ask}}</view>
+  <view class="loc">{{s.loc}}</view>
   <view class="payment">{{s.payment}}</view>
   <view class="time">{{s.time}}</view>
+  <view class="duration">{{s.duration}}</view>
   <view class="ps">{{s.ps}}</view>
 </view>

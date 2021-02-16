@@ -28,7 +28,7 @@ Page({
   },
   toDetails: function(event){
     console.log(event)
-    var id = event.target.dataset.id
+    var id = event.currentTarget.dataset.id
     wx.navigateTo({
       url: '../expdetail/expdetail?id='+id
     })
