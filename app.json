@@ -2,7 +2,6 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/publish/publish",
     "pages/text/text",
     "pages/taskbar/taskbar",
     "pages/me/me",

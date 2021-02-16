@@ -2,4 +2,39 @@
 
 <view wx:for="{{s}}" bindtap="toDetails" data-id="{{item._id}}">
   {{item.type}}{{item.payment}}
+  心智试验5000元
 </view>
+<text>{{tmp}}</text>
+
+<view class="view_tupian_wenzi">
+      <image class="image_1" src="../../images/yandong.png" />
+      <view class="view_wenzi2">
+        <text>眼动实验</text> <!--写函数从数据库读取然后改这里的数据-->
+        <text class="text_small">实验报酬：50</text>
+        <text class="text_small">实验时间：1990.10.21</text>
+        <text class="text_small">实验地点：心理学院101</text>
+      </view>
+</view>
+
+<view class="view_tupian_wenzi">
+      <image class="image_1" src="../../images/wenjuan.png" />
+      <view class="view_wenzi2">
+        <text>眼动实验</text> <!--写函数从数据库读取然后改这里的数据-->
+        <text class="text_small">实验报酬：50</text>
+        <text class="text_small">实验时间：1990.10.21</text>
+        <text class="text_small">实验地点：心理学院101</text>
+      </view>
+</view>
+
+<view class="view_tupian_wenzi">
+      <image class="image_1" src="../../images/naodian.png" />
+      <view class="view_wenzi2">
+        <text>眼动实验</text> <!--写函数从数据库读取然后改这里的数据-->
+        <text class="text_small">实验报酬：50</text>
+        <text class="text_small">实验时间：1990.10.21</text>
+        <text class="text_small">实验地点：心理学院102</text>
+      </view>
+</view>
+
+
+

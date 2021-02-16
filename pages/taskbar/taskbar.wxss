@@ -1,1 +1,37 @@
 /* pages/taskbar/taskbar.wxss */
+
+
+.share_button{
+  width: 680rpx;
+  height: 300rpx;
+  border-color: transparent;
+}
+.share_button::after{
+  border: none;
+}
+
+.view_tupian_wenzi {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px
+}
+.image_1 {
+  width: 75px;
+  height: 75px;
+  background-position-y: center;
+}
+.view_wenzi2{
+  width: 190px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.text_small{
+   font-size: 28rpx;
+   word-break:break-all;
+   color: #7a7878
+}
+.view_tupian_wenzi{
+  border: 8rpx double rgb(180, 84, 84);
+  margin: 25rpx;
+}
