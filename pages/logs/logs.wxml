@@ -1,6 +1,11 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view class="info-container">
+  <image class="user-image" src="{{logs.avatarUrl}}" mode="aspectFill"/>
+  <view class="nickname">昵称:{{logs.nickName}}</view>
+  <view class="border"/>
+  <input type="text" class="input-design" placeholder="你的姓名" value="{{user_info.name}}" bindinput="getName"/>
+  <input type="text" class="input-design" placeholder="所在学院" value="{{user_info.from}}" bindinput="getSchool"/>
+  <input type="number" class="input-design" style="width: 300rpx;" placeholder="学号" value="{{user_info.schoolnumber}}" bindinput="getSch_num"/>
+  <input type="text" class="input-design" style="width: 300rpx" placeholder="电话" value="{{user_info.phonenumber}}" bindinput="getPhone"/>
+  <view class="tosave" bindtap="tosave">保存</view>
 </view>

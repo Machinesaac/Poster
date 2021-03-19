@@ -1,0 +1,16 @@
+<!--miniprogram/pages/mytask/mytask.wxml-->
+<view class="no_task_here" wx:if="{{s.length == 0}}">暂无悬赏任务</view>
+<view wx:for="{{s}}" data-id="{{item._id}}" wx:key="_id">
+  <view class="view_tupian_wenzi">
+    <view class="view_wenzi2">
+      <text class="task_list_title">{{item.type}}</text> <!--写函数从数据库读取然后改这里的数据-->
+      <view class="show-payment">
+      <image class="show-payment-icon" src="/images/qianbao.png" mode="aspectFill"></image>
+        <view class="payment">{{item.payment}}</view>
+      </view>
+    </view>
+    <view class="more-container">
+      <view class="taptodetail" bindtap="bindtoman">人员管理</view>
+    </view>
+  </view>
+</view>

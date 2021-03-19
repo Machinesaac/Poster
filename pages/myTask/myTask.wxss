@@ -1,0 +1,105 @@
+/* pages/taskbar/taskbar.wxss */
+
+.no_task_here{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  color: #cdcdcd;
+  margin-top: 30vh;
+}
+
+.share_button{
+  width: 680rpx;
+  height: 300rpx;
+  border-color: transparent;
+}
+.share_button::after{
+  border: none;
+}
+
+.task_list_title{
+  font-size: 50rpx;
+  color: #229dfe;
+  font-weight: bold;
+}
+
+.show-payment{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.show-payment-icon{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+.payment{
+  display: flex;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  color: #1296db;
+  font-weight: bold;
+  padding: 5rpx;
+}
+
+.border{
+  display: flex;
+  height: 5rpx;
+  border-radius: 5rpx;
+  background-color: #aaa;
+}
+
+.image_1 {
+  width: 75px;
+  height: 75px;
+  background-position-y: center;
+}
+.view_wenzi2{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+.text_small{
+   font-size: 28rpx;
+   word-break:break-all;
+   color: #aaa;
+}
+
+.view_tupian_wenzi{
+  display: flex;
+  background-color: white;
+  border-radius: 30rpx;
+  width: 690rpx;
+  margin: 30rpx;
+  margin-bottom: 40rpx;
+  flex-direction: column;
+}
+
+.more-container{
+  width: 690rpx;
+  background-color: rgb(232, 247, 253);
+  height: 90rpx;
+  border-radius: 0rpx 0rpx 30rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.taptodetail{
+  width: 200rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70rpx;
+  background-color: #71c2ff;
+  color: white;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-right: 20rpx;
+}

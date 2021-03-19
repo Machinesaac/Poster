@@ -1,50 +1,55 @@
 /**index.wxss**/
-.container {
-  background-color:rgb(255, 255, 255);
+page{
+  background-color: #f6f6f6;
 }
-.container text{
-  min-width: 150rpx;
+
+.tap_part{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1{
+  display: flex;
+  width: 750rpx;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30vh;
 }
 
 .publish {
-  width: 600rpx;
-  height: 300rpx;
+  display: flex;
+  border-radius: 180rpx;
+  width: 180rpx;
+  height: 180rpx;
   margin-top: 20rpx;
   background-color: white;
   color: #0c0b0b;
-  border-radius: 0rpx;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 30rpx;
+  margin-bottom: 10rpx;
 }
+
+.border{
+  background-color: #cdcdcd;
+  width: 1rpx;
+  height: 180rpx;
+}
+
 .btnImg{
-  width: 150rpx;
-  height: 150rpx;
-}
-.publish::after{
-  border: 0;
+  width: 80rpx;
+  height: 80rpx;
 }
 
+.show_content{
+  width: 95rpx;
+}
 
-.notice{
-  width: 600rpx;
-  height: 300rpx;
-  margin-top: 20rpx;
-  background-color: white;
-  color: #0c0b0b;
-  border-radius: 0rpx;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.font_state{
   font-size: 30rpx;
-}
-.noticeImg{
-  width: 150rpx;
-  height: 150rpx;
-}
-.notice::after{
-  border: 0;
+  font-weight: bold;
+  color: #aaa;
 }

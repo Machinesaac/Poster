@@ -1,22 +1,26 @@
 <view class="container">
-  <view class="bg-fff p-lr30 border-t">
-    <view class="ipt-wrap border-b flex ai-center">
-      <label for="" class="font14">招募人</label>
-      <input type="text" class="ml40 flex1" placeholder="请输入招募人姓名" bindinput="getName"></input>
-    </view>
-    
-    <view class="ipt-wrap border-b flex ai-center">
-    <view class="section">
-    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-    <view class="picker">
-      <label for="" class="font14">实验类别：</label>{{array[index]}}
-    </view>
-    </picker>
-   </view>
+  <view class="state-container">
+    <view class="state-container">信息填写</view>
+    <view class="state-container en">Information</view>
   </view>
+  <view class="state-container-detail">
+    <view class="ipt-wrap border-b flex ai-center margin-top">
+      <label for="" class="font14">招募人</label>
+      <input type="text" class="ml40 flex1" placeholder="请输入招募人姓名" value="{{name}}" bindinput="getName"></input>
+    </view>
     
     <view class="ipt-wrap border-b flex ai-center">
-      <label for="" class="font14">实验类型</label>
+      <view class="section">
+        <picker bindchange="bindPickerChange" value="{{index1}}" range="{{array}}">
+          <view class="picker">
+            <label for="" class="font14">实验类别：</label>{{array[index1]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    
+    <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font14">实验命名</label>
       <input type="text" class="ml40 flex1" maxlength="11" placeholder="请输入实验类型" bindinput="getType"></input>
     </view>
     <view class="ipt-wrap border-b flex ai-center">
@@ -39,14 +43,11 @@
       <input type="text" class="ml40 flex1" maxlength="30" placeholder="请输入被试者所需条件" bindinput="getAsk"></input>
     </view>
  
-    <view class="ipt-wrap border-b">
+    <view class="ipt-wrap margin-bottom">
       <textarea name="" id="" class="textarea _w100 p-tb30 lh10" maxlength="50" placeholder="可在此处填写备注说明" bindinput="getPs" ></textarea>
     </view>
- 
- 
-  <view class="combtn font16 color-fff _w100 bg-btn" bindtap="publish">
-    <image class="yesImg" src= '../../images/yes.png'></image>
-    确定
+    <view class="combtn font30 font-b color-fff _w100 bg-btn" bindtap="publish">
+      确定
+    </view>
   </view>
-</view>
 </view>

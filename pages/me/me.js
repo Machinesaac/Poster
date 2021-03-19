@@ -1,5 +1,7 @@
 const app = getApp()
-
+const db = wx.cloud.database({
+  env:"poster-7gmqnwnb215c1afc"
+})
 Page({
   data: {
     motto: 'Hello World',
@@ -48,5 +50,16 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+
+  tomytask: function() {
+    wx.navigateTo({
+      url: '../mytask/mytask',
+    })
+  },
+  tomymission: function() {
+    wx.navigateTo({
+      url: '../mymission/mymission',
+    })
+  },
 })

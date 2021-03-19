@@ -1,0 +1,12 @@
+<!--miniprogram/pages/menManage/menManage.wxml-->
+<!--miniprogram/pages/mytask/mytask.wxml-->
+<view class="no_task_here" wx:if="{{infs.length == 0}}">暂无人员报名</view>
+<view wx:for="{{infs}}"  wx:key="index">
+  <view class="view_tupian_wenzi">
+      <view class="view_wenzi2">
+        <text class="task_list_title">{{item.name}}</text> <!--写函数从数据库读取然后改这里的数据-->
+        <text class="text_small">学院：{{item.from}}</text>
+        <text class="text_small">电话号码：{{item.phonenumber}}</text>
+      </view>
+</view>
+</view>

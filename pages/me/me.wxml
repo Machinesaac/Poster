@@ -1,9 +1,28 @@
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:if="{{!hasUserInfo && canIUse}}">
+      <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="bind_css"> 点击登录 </button>
+    </block>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class="user-container">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class="detail_info">
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          <view class="input_detail_info" bindtap="bindViewTap">详细信息</view>
+        </view>
+      </view>
+      <view class="button-container" >
+        <view class="button-container-detail" bindtap="tomytask">
+          <image class="check-icon" style="width: 72rpx;" src="/images/card.png" mode="aspectFill"/>
+          <view class="check-state">我的发布</view>
+        </view>
+        <view class="border"/>
+        <view class="button-container-detail" bindtap="tomymission">
+          <image class="check-icon" src="/images/day.png" mode="aspectFill"/>
+          <view class="check-state">我的任务</view>
+        </view>
+      </view> 
     </block>
   </view>
 </view>
+

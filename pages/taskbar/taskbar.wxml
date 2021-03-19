@@ -34,12 +34,15 @@
       </view>
 </view>
 -->
-<view wx:for="{{s}}" bindtap="toDetails" data-id="{{item._id}}">
+<view class="no_task_here" wx:if="{{s.length == 0}}">暂无悬赏任务</view>
+<view wx:for="{{s}}" bindtap="toDetails" data-id="{{item._id}}" wx:key="_id">
   <view class="view_tupian_wenzi">
-      <image class="image_1" src="../../images/yandong.png" />
       <view class="view_wenzi2">
-        <text>{{item.type}}</text> <!--写函数从数据库读取然后改这里的数据-->
-        <text class="text_small">实验报酬：{{item.payment}}</text>
+        <text class="task_list_title">{{item.type}}</text> <!--写函数从数据库读取然后改这里的数据-->
+        <view class="show-payment">
+          <image class="show-payment-icon" src="/images/qianbao.png" mode="aspectFill"></image>
+          <view class="payment">{{item.payment}}</view>
+        </view>
         <text class="text_small">实验时间：{{item.time}}</text>
         <text class="text_small">实验地点：{{item.loc}}</text>
       </view>

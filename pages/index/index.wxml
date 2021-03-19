@@ -1,13 +1,16 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="head"></view>
-  <button class = "publish" bindtap="toPublish">
-    <image class="btnImg" src= '../../images/out.png'></image>
-    <view>发布</view>
-  </button>
-  <button class="notice" bindtap="toTaskbar">
-    <image class = "noticeImg" src= '../../images/in.png'></image>
-    <view>悬赏栏</view>
-  </button>
-
+<view class="container1">
+  <view class="tap_part">
+    <view class = "publish" bindtap="toPublish">
+      <image class="btnImg" src= '../../images/out.png' mode="aspectFill"></image>
+    </view>
+    <view class="font_state">任务发布</view>
+  </view>
+  <view class="border"/>
+  <view class="tap_part">
+    <view class="publish" bindtap="toTaskbar">
+      <image class = "btnImg show_content" src= '../../images/in.png' mode="aspectFill"></image>
+    </view>
+    <view class="font_state">悬赏告示</view>
+  </view>
 </view>

@@ -1,0 +1,39 @@
+<!--<view>
+  <view class="type">{{s.type}}</view>
+  <view class="ask">{{s.ask}}</view>
+  <view class="loc">{{s.loc}}</view>
+  <view class="payment">{{s.payment}}</view>
+  <view class="time">{{s.time}}</view>
+  <view class="duration">{{s.duration}}</view>
+  <view class="ps">{{s.ps}}</view>
+</view>-->
+<view class="show-detail-container">
+  <view class="show-detail-title">
+    <view class="show-type">{{s.type}}</view>
+    <view class="show-index">{{s.index}}</view>
+  </view>
+  <view class="show-title">
+     实验地点
+  </view>
+  <view class="show-contect">{{s.loc}}</view>
+  <view class="show-title">
+     实验报酬
+  </view>
+  <view class="show-contect">{{s.payment}}</view>
+  <view class="show-title">
+     实验时间
+  </view>
+  <view class="show-contect">{{s.time}}</view>
+
+  <view class="other-contect-border">
+    <view class="border"></view>
+    <view class="border-contect-title">备注</view>
+    <view class="border"></view>
+  </view>
+  <view class="show-title mb100">{{s.ps}}</view>
+
+  <view class="combtn font30 font-b color-fff _w100 bg-btn" bindtap="tomenManage" data-id="{{item._id}}">
+      人员管理
+  </view>
+  <view class="button" bindtap="tomenManage">人员管理</view>
+</view>

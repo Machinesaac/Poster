@@ -1,34 +1,40 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/text/text",
     "pages/taskbar/taskbar",
     "pages/me/me",
-    "pages/expdetail/expdetail"
+    "pages/expdetail/expdetail",
+    "pages/mytask/mytask",
+    "pages/mymission/mymission",
+    "pages/menManage/menManage"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#c00812",
-    "navigationBarTitleText": "Lab",
-    "navigationBarTextStyle":"white",
-    "backgroundColor": "#ffdaab" 
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f6f6f6",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f6f6"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
     "list": [
       {
-      "pagePath": "pages/index/index",
-      "text": "Main",
-      "iconPath": "images/mainSelect.png",
-      "selectedIconPath": "images/mainSelected.png"
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/me_select.png",
+        "selectedIconPath": "images/tongzhi.png"
       },
       {
         "pagePath": "pages/me/me",
-        "text": "Me",
-        "iconPath": "images/me.png",
-        "selectedIconPath": "images/me.png"
+        "text": "我的",
+        "iconPath": "images/mainSelect.png",
+        "selectedIconPath": "images/mainSelected.png"
       }
-  ]
+    ]
   }
 }

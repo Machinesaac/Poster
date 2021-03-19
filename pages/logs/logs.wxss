@@ -1,8 +1,55 @@
-.log-list {
+.info-container{
+  width: 690rpx;
   display: flex;
+  background-color: white;
+  border-radius: 30rpx;
   flex-direction: column;
-  padding: 40rpx;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30rpx;
 }
-.log-item {
-  margin: 10rpx;
+
+.user-image{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 100%;
+  margin-top: 30rpx;
+}
+
+.nickname{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #cdcdcd;
+  margin-bottom: 40rpx;
+}
+
+.border{
+  background-color: #e0dfdf;
+  width: 600rpx;
+  height: 2rpx;
+  margin-bottom: 40rpx;
+}
+
+.input-design{
+  width: 250rpx;
+  height: 40rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.tosave{
+  width: 240rpx;
+  height: 90rpx;
+  background-color: rgb(31, 190, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42rpx;
+  color: white;
+  font-weight: bold;
+  border-radius: 100rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
 }

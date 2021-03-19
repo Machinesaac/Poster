@@ -1,5 +1,5 @@
 .ipt-wrap{
-  min-height: 100rpx;
+  width: 630rpx;
   line-height: 100rpx;
 }
 .ipt-wrap label{
@@ -92,6 +92,44 @@
   background: #fff;
   transition: height 0.3s;
   z-index: 100;
+}
+
+.state-container{
+  font-weight: bold;
+  font-size: 40rpx;
+  color: black;
+  margin-left: 10rpx;
+  display: flex;
+  width: 750rpx;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.state-container-detail{
+  display: flex;
+  width: 690rpx;
+  background-color: white;
+  border-radius: 30rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30rpx;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.margin-top{
+  margin-top: 30rpx;
+}
+
+.margin-bottom{
+  margin-bottom: 30rpx;
+}
+
+.en{
+  color: #cdcdcd;
+  font-size: 20rpx;
 }
 
 .option {

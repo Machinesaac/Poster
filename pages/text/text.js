@@ -1,15 +1,37 @@
 const db = wx.cloud.database({
   env:"poster-7gmqnwnb215c1afc"
 })
+const app = getApp()
 
 Page({
   data: {
     array: ['问卷调查', '行为实验', '脑电实验', '眼动实验'],
-    index: 0
+    index1: 0,
+    index: '问卷调查',
+
+
+    type:'',
+    name:'',
+    ask:'',
+    duration:'',
+    payment:'',
+    loc:'',
+    time:'',
+    ps:'',
   },
+  onLoad: function(){
+    console.log(app.globalData.userdata)
+    if(app.globalData.userdata.length != 0){
+      let data = app.globalData.userdata[0]
+      this.setData({
+        name: data.name
+      })
+    }
+  },
+
   getType: function(e){
     this.setData({
-      type: e.detail.value
+        type: e.detail.value
     })
   },
   getName: function(e){
@@ -47,15 +69,38 @@ Page({
       ps: e.detail.value
     })
   },
+
+
   bindPickerChange: function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
-      index: e.detail.value
+      index: this.data.array[e.detail.value]
     })
+    console.log(this.data.index)
   },
   publish: function(){
+    var mid = new Array();
+    mid[0] = this.data.type;
+    mid[1] = this.data.name;
+    mid[2] = this.data.ask
+    mid[3] = this.data.duration;
+    mid[4] = this.data.payment
+    mid[5] = this.data.loc;
+    mid[6] = this.data.time;
+
+    for(var i = 0; i < 7;i++){
+      if(mid[i] == ''){
+        wx:wx.showToast({
+          title: '有未填写信息',
+          icon:'none'
+        })
+        return false
+      }
+    }
+
     db.collection('jobs').add({
       data: {
+        index: this.data.index,
         type:this.data.type,
         name:this.data.name,
         ask:this.data.ask,
@@ -67,6 +112,9 @@ Page({
       },
       success: function(res) {
         console.log(res)
+        wx.showToast({
+          title: '发送成功',
+        })
       }
     })
   
